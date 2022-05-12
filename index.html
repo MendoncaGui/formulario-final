@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Petrus imobiliária</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <header>
+      <div class="titulo">
+        <h1><span class="span-titulo">Imobiliária Mendonza</span></h1>
+      </div>
+    </header>
+    <main>
+      <div class="pai">
+        <form id="form">
+          <h1 class="cadastro">Cadastrar</h1>
+
+          <div class="form-control">
+            <label for="username">Username</label>
+            <input id="username" type="text" onchange="toggleButton()" />
+            <small>Username deve conter de 3 à 25 caracteres</small>
+          </div>
+
+          <div class="form-control">
+            <label for="email">Email</label>
+            <input id="email" type="email" onchange="toggleButton()" />
+            <small>Email inválido</small>
+          </div>
+
+          <div class="form-control">
+            <label for="senha1">Senha</label>
+            <input id="senha1" type="password" onchange="toggleButton()" />
+            <small>Senha deve conter ao menos 8 dígitos</small>
+          </div>
+
+          <div class="form-control">
+            <label for="senha2">Confirmação de senha</label>
+            <input id="senha2" type="password" onchange="toggleButton()" />
+            <small>Senhas diferentes</small>
+          </div>
+
+          <button id="login" type="submit" disabled>Cadastrar</button>
+        </form>
+      </div>
+      <div class="div-aside">
+        <img class="imagem-placa" src="imagens/placa-branca-png-2.png" alt="" />
+        <h2 class="texto-aside">
+          Cadastra-se e confira os melhores imóveis com o melhor valor do
+          mercado!
+        </h2>
+        <p></p>
+      </div>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;700&family=Inter:wght@700&family=Poiret+One&display=swap');
+body {
+  margin: 0;
+  padding: 0;
+  background: url('imagens/imob.png') no-repeat;
+  background-size: cover;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+/*div do imput */
+.pai {
+  position: absolute;
+  display: block;
+  width: 35rem;
+  height: 35rem;
+  top: 7rem;
+  background: rgb(203 204 208 10);
+  box-shadow: 50px 50px 70px rgba(1, 0, 0, 0.9);
+  border-radius: 6px;
+
+  display: flex;
+  flex-direction: row;
+  z-index: 1;
+}
+
+form h1 {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+
+  letter-spacing: 0.03em;
+  text-indent: 1px;
+
+  margin-left: 9.5rem;
+
+  color: #000000;
+}
+
+.form-control {
+  margin-left: 8rem;
+  margin-block: 1rem;
+
+  position: relative;
+}
+
+.form-control label {
+  display: inline-block;
+  margin-bottom: 5px;
+  color: black;
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+}
+
+.form-control input {
+  border: 3px solid black;
+  border-radius: 5px;
+  outline: 0;
+  display: block;
+
+  font-size: 14px;
+
+  width: 100%;
+  line-height: 2.2rem;
+}
+
+/*BOTÃO DE CONFIRMAR - estilo*/
+button {
+  background: rgb(138 141 149);
+  border: 2px solid #000000;
+  border-radius: 15px;
+  width: 17rem;
+  height: fit-content;
+  margin-left: 8.5rem;
+  margin-top: 1.8rem;
+
+  cursor: pointer;
+  transition: background 0.25s ease-in-out;
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 35px;
+
+  color: #fff;
+}
+
+button:hover {
+  background-color: rgb(138 141 149);
+}
+
+buttton:disabled {
+  opacity: 0.1;
+  cursor: default;
+}
+
+button:disabled:hover {
+  background-color: rgb(212, 198, 198);
+}
+
+/*div dos títulos*/
+
+.titulo h1 {
+  width: fit-content;
+  display: flex;
+  z-index: 1;
+  letter-spacing: 0.5rem;
+  margin-inline: auto;
+  margin-top: 0.9rem;
+  font-family: 'Poiret One', cursive;
+
+  background-color: rgb(100, 102, 108, 0.25);
+}
+
+.titulo h1:hover {
+  color: white;
+}
+
+h1 {
+  display: flex;
+  height: fit-content;
+  font-family: 'Noto Serif', serif;
+  font-weight: 700;
+  font-size: 50px;
+  margin-top: 0.6rem;
+}
+
+.cadastro {
+  margin-left: 10rem;
+}
+
+.span-titulo {
+  text-decoration: overline underline;
+}
+
+.span-titulo:hover {
+  color: white;
+}
+
+/*aside , textos*/
+
+.div-aside {
+  display: flex;
+  position: absolute;
+  margin-left: -25rem;
+  top: 18.2em;
+  width: 40rem;
+  height: 20rem;
+}
+
+.texto-aside {
+  display: flex;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 25px;
+  font-weight: 700;
+  width: 20rem;
+  margin-left: -8.8rem;
+  margin-top: 4.3rem;
+  z-index: 1;
+  letter-spacing: 4px;
+}
+
+/*MENSAGENS DE ERRO*/
+
+.form-control.success input {
+  border: 3px solid #4eca64;
+}
+
+.form-control.error input {
+  border: 3px solid red;
+}
+
+.form-control small {
+  display: flex;
+  width: 10rem;
+  color: red;
+  visibility: hidden;
+  position: absolute;
+
+  font-family: 'Noto Serif', serif;
+  font-weight: 400;
+
+  margin-left: 4rem;
+
+  font-size: 0.9rem;
+}
+
+.form-control.error small {
+  color: red;
+  visibility: visible;
+}
+
+.imagem-placa {
+  position: absolute;
+  display: flex;
+  width: 35rem;
+  left: -16rem;
+  margin: 0px;
+  padding: 0px;
+  top: -10rem;
+}
